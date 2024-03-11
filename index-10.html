@@ -8,8 +8,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta name="description" content="Student Affairs Council">
-        <meta name="author" content="">
-
+        <meta name="author" content="">   
+        
         <!-- Favicon and touch Icons -->
         <link href="../assets/img/sac.png" rel="shortcut icon" type="image/png">
         <link href="../assets/img/apple-touch-icon.html" rel="apple-touch-icon">
@@ -24,6 +24,50 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         
     </head>
+    <style>
+        .button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+
+    </style>
 
 
     <body class="bg-white">
@@ -60,8 +104,8 @@
             <div class="container">
                 <div class="header_inner d-flex align-items-center justify-content-between">
                     <div class="logo">
-                        <a href="index-10.html" class="light_logo"><img src="../assets/img/sac.png" alt="logo"></a>
-                        <a href="index-10.html" class="dark_logo"><img src="../assets/img/sac.png" alt="logo"></a>
+                        <a href="index.html" class="light_logo"><img src="../assets/img/sac.png" alt="logo"></a>
+                        <a href="index.html" class="dark_logo"><img src="../assets/img/sac.png" alt="logo"></a>
                     </div>
 
                     
@@ -81,7 +125,7 @@
                                     <li class="menu-item"><a href="index-11.html">Home Ten</a></li>
                                 </ul> -->
                             </li>
-                            <li class="menu-item menu-item-has-children"><a href="#">Gallery</a>
+                            <li class="menu-item menu-item-has-children active"><a href="team.html">Gallery</a>
                                 <!-- <ul class="sub-menu">
                                     <li class="menu-item"><a href="project-1.html">Projects </a></li>
                                     <li class="menu-item"><a href="project-2.html">Projects Two</a></li>
@@ -90,7 +134,7 @@
                                     <li class="menu-item"><a href="project-details-2.html">Project Details Two</a></li>
                                 </ul> -->
                             </li>
-                            <li class="menu-item menu-item-has-children"><a href="#">About us</a>
+                            <li class="menu-item menu-item-has-children active"><a href="#">About us</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item"><a href="about.html">About Us</a></li>
                                     <li class="menu-item menu-item-has-children"><a href="#">Team</a>
@@ -121,7 +165,7 @@
                                     <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
                                 </ul> -->
                             <!-- </li> -->
-                            <li class="menu-item"><a href="contact.html">Contacts</a></li>
+                            <li class="menu-item "><a href="contact.html">Contacts</a></li>
                             <!-- <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item"><a href="blog.html">Blog</a></li>
@@ -194,8 +238,8 @@
         <div class="aside_info_wrapper">
 			<button class="aside_close"><i class="bi bi-x-lg"></i></button>
             <div class="aside_logo">
-                <a href="index-10.html" class="light_logo"><img src="../assets/img/sac.png" alt="logo"></a>
-                <a href="index-10.html" class="dark_logo"><img src="../assets/img/sac.png" alt="logo"></a>
+                <a href="index.html" class="light_logo"><img src="../assets/img/sac.png" alt="logo"></a>
+                <a href="index.html" class="dark_logo"><img src="../assets/img/sac.png" alt="logo"></a>
             </div>
 			<div class="aside_info_inner">
                 <p>Student Affairs Council -  Office of Students' Welfare GLAU </p>
@@ -227,16 +271,17 @@
                 <div class="swiper swiper_theme_slider_7">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="slider" style="background-image: url('../assets/img/slider/16.jpg')">
+                            <div class="slider" style="background-image: url('../assets/img/about/spandanbg1.jpg')">
                                 <div class="container">
                                     <div class="slide_content">
                                         <div class="slide_content_wrapper mb-0 h-auto">
                                             <div class="slide_content_inner">
-                                                <h4><a href="about.html" class="text-white text-uppercase">Welcome to SAC-GLAU</a></h4>
+                                                <img src="assets/img/about/title.png" style="width: 80%; margin-bottom: 16%;"></img>
                                                 <div class="details_link">
-                                                    <a href="about.html">
-                                                        <span class="link_text">Student Affairs Council -  </span>
-                                                        <span class="link_icon">Click Here</span>
+                                                    <a href="registerSpandan.html">
+                                                        <button class="button" style="margin-top: 10%;">
+                                                            <span class="button-content">Register </span>
+                                                        </button>
                                                     </a>
                                                 </div>
                                             </div>
@@ -246,7 +291,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
+                        <!-- <div class="swiper-slide">
                             <div class="slider" style="background-image: url('../assets/img/slider/17.jpg')">
                                 <div class="container">
                                     <div class="slide_content">
@@ -285,7 +330,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Add Pagination -->
                     <!-- <div class="swiper-pagination"></div> -->
 
@@ -305,8 +350,8 @@
                         <div class="col-lg-5 col-md-5 col-sm-6">
                             <div class="about_image">
                                 <img src="../assets/img/about/e2.svg" alt="About" class="line_frame_2" data-aos="fade-up" data-aos-duration="1300">
-                                <img src="../assets/img/about/a2.jpg" alt="img" class="abt_img_1"  data-aos="fade-right" data-aos-duration="1000">
-                                <img src="../assets/img/about/a3.jpg" alt="img" class="abt_img_2"  data-aos="fade-left" data-aos-duration="1000">
+                                <img src="../assets/img/about/abt1.jpg" alt="img" class="abt_img_1"  data-aos="fade-right" data-aos-duration="1000">
+                                <img src="../assets/img/about/abt2.jpg" alt="img" class="abt_img_2"  data-aos="fade-left" data-aos-duration="1000">
                                 <img src="../assets/img/about/e2.svg" alt="About"  class="line_frame_1" data-aos="fade-down" data-aos-duration="1300">
                             </div>
                         </div>
@@ -999,8 +1044,7 @@
                                         </ul>
                                     </div>
                                     <div class="copyright">
-                                        <p>SAC-GLAU 2024. All Rights Reserved</p>
-                                        <p>Designed By Utkarsh with 🤍</p>
+                                        <p>Mrittik 2023. All Rights Reserved</p>
                                     </div>
                                 </div>
                             </div>
