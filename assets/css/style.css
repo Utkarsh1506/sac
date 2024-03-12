@@ -216,6 +216,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  color: rgb(178, 178, 178);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20706,9 +20707,9 @@ body.bg-dark.bg-white .contact_us.bg-dark-200, body.bg-white .contact_us.bg-dark
 body.bg-dark.bg-white select, body.bg-dark.bg-white input[type="text"], body.bg-dark.bg-white input[type="email"], body.bg-dark.bg-white input[type="url"], body.bg-dark.bg-white input[type="password"], body.bg-dark.bg-white input[type="search"], body.bg-dark.bg-white input[type="number"], body.bg-dark.bg-white input[type="tel"], body.bg-dark.bg-white input[type="range"], body.bg-dark.bg-white input[type="date"], body.bg-dark.bg-white input[type="month"], body.bg-dark.bg-white input[type="week"], body.bg-dark.bg-white input[type="time"], body.bg-dark.bg-white input[type="datetime"], body.bg-dark.bg-white input[type="datetime-local"], body.bg-dark.bg-white input[type="color"],
 body.bg-dark.bg-white textarea.form-control, body.bg-white select, body.bg-white input[type="text"], body.bg-white input[type="email"], body.bg-white input[type="url"], body.bg-white input[type="password"], body.bg-white input[type="search"], body.bg-white input[type="number"], body.bg-white input[type="tel"], body.bg-white input[type="range"], body.bg-white input[type="date"], body.bg-white input[type="month"], body.bg-white input[type="week"], body.bg-white input[type="time"], body.bg-white input[type="datetime"], body.bg-white input[type="datetime-local"], body.bg-white input[type="color"],
 body.bg-white textarea.form-control {
-  background-color: #f8f8f8;
+  background-color: #2e2e2e;
   border: 1px solid #f2f2f2;
-  color: #000000;
+  color: rgb(178, 178, 178);
 }
 
 body.bg-dark.bg-white .gmap, body.bg-white .gmap {

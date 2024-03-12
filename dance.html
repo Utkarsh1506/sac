@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
     
-<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/mrittik/light/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Feb 2024 16:53:18 GMT -->
 <head>
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -67,7 +66,7 @@
                     
                     <div class="mainnav d-none d-lg-block">
                         <ul class="main_menu">
-                            <li class="menu-item menu-item-has-children "><a href="index-10.html">Home</a>
+                            <li class="menu-item menu-item-has-children "><a href="index.html">Home</a>
                                 <!-- <ul class="sub-menu">
                                     <li class="menu-item"><a href="index-2.html">Home One</a></li>
                                     <li class="menu-item"><a href="index-3.html">Home Two</a></li>
@@ -81,14 +80,14 @@
                                     <li class="menu-item"><a href="index-11.html">Home Ten</a></li>
                                 </ul> -->
                             </li>
-                            <li class="menu-item menu-item-has-children "><a href="team.html">Gallery</a>
-                                <!-- <ul class="sub-menu">
-                                    <li class="menu-item"><a href="project-1.html">Projects </a></li>
-                                    <li class="menu-item"><a href="project-2.html">Projects Two</a></li>
-                                    <li class="menu-item"><a href="project-3.html">Peojects Three</a></li>
-                                    <li class="menu-item"><a href="project-details.html">Peoject Details</a></li>
-                                    <li class="menu-item"><a href="project-details-2.html">Project Details Two</a></li>
-                                </ul> -->
+                            <li class="menu-item menu-item-has-children "><a href="#">SPANDAN</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="timeline.html">Spandan Timeline </a></li>
+                                    <li class="menu-item"><a href="events.html">EVENTS</a></li>
+                                    
+                                </ul>
+                            </li>
+                                
                             </li>
                             <li class="menu-item menu-item-has-children "><a href="#">About us</a>
                                 <ul class="sub-menu">
@@ -96,7 +95,7 @@
                                     <li class="menu-item menu-item-has-children"><a href="#">Team</a>
                                         <ul class="sub-menu">
                                             <li class="menu-item"><a href="team.html">Our Team</a></li>
-                                            <li class="menu-item"><a href="team-details.html">Team Details</a></li>
+                                            
                                         </ul>
                                     </li>
                                     <!-- <li class="menu-item menu-item-has-children"><a href="#">Services</a>
@@ -219,11 +218,11 @@
             <div class="page_header_inner">
                 <div class="container">
                     <div class="page_header_content d-flex align-items-center justify-content-between">
-                        <h2 class="heading">Login</h2>
+                        <h2 class="heading">Battle of Dance</h2>
                         <ul class="breadcrumb d-flex align-items-center">
-                            <li><a href="index-2.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             
-                            <li class="active">Login</li>
+                            <li class="active">Register</li>
                         </ul>
                     </div>
                 </div>
@@ -237,29 +236,66 @@
                     <div class="row">
                         <div class="col col-lg-8 offset-lg-2">
                             <div class="shipping_form">
-                                <h1 class="widget-title text-uppercase">Login <span class="title-line"></span></h1> 
-                                <form action="#"  method="post">
+                                <h1 class="widget-title text-uppercase">Register Now! <span class="title-line"></span></h1> 
+                                <form action="#" method="post">
+                                    <!-- User Information -->
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="fname" value="" placeholder="Username or Email Address *" required>
+                                        <input type="text" class="form-control" name="team_name" placeholder="Full Name of Team" required>
                                     </div>
-
                                     <div class="form-group">
-                                        <input type="password" class="form-control" name="password" value="" placeholder="Password *" required>
+                                        <input type="text" class="form-control" name="university" placeholder="University/College" required>
                                     </div>
-
-                                    <div class="form-group d-flex align-items-center mb-4">
-                                        <input type="checkbox" class="form-check-input me-2" name="checkbox1" value="">
-                                        <label class="form-label mb-0" for="checkbox1">Remember Password</label>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                                     </div>
-
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="contact_no" placeholder="Contact Number" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="whatsapp_no" placeholder="WhatsApp Number" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="guardian_no" placeholder="Guardian Number" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="undertaking">
+                                            <input type="checkbox" class="checkbox" id="undertaking" name="undertaking" required>
+                                            I understand and agree to abide by the rules and regulations set forth by the organizers of the event. <a href="link_to_undertaking_document.pdf" target="_blank">View Undertaking Document</a>
+                                        </label>
+                                    </div>
+                                
+                                    <!-- Performance Information -->
+                                    <div class="form-group">
+                                        <select class="form-control" name="performance_type" required>
+                                            <option value="" disabled selected>Select Performance Type</option>
+                                            <option value="solo">Solo</option>
+                                            <option value="duet">Duet</option>
+                                            <option value="group">Group</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="id_proof">Upload ID Proof</label>
+                                        <input type="file" class="form-control-file" id="id_proof" name="id_proof" accept="image/*, .pdf" required>
+                                        <small class="text-muted">Maximum file size: 5MB</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="song">Upload Song</label>
+                                        <input type="file" class="form-control-file" id="song" name="song" accept=".mp3, .wav" required>
+                                        <small class="text-muted">Maximum file size: 5MB</small>
+                                    </div>
+                                  
+                                    <div class="form-group">
+                                        <label for="photo">Upload Photo</label>
+                                        <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*" required>
+                                        <small class="text-muted">Maximum file size: 5MB</small>
+                                    </div>
+                                
+                                    <!-- Submit Button -->
                                     <div class="btn_group mb-2">
-                                        <button type="submit" class="btn white">Log In</button>
-                                    </div>
-
-                                    <div class="form-group mt-4">
-                                        <label><a href="#">Forgot Password</a></label>                                
+                                        <button type="submit" class="btn white">Submit</button>
                                     </div>
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -303,7 +339,7 @@
                             <div class="footer_elements d-flex align-items-center justify-content-end">
                                 <div class="footer_elements_inner">
                                     <div class="footer_logo">
-                                        <a href="index-10.html" class="light_logo"><img src="/assets/img/sac.png" alt="logo"></a>
+                                        <a href="index.html" class="light_logo"><img src="/assets/img/sac.png" alt="logo"></a>
                                     </div>
                                     <div class="footer_social">
                                         <ul class="social_list">
@@ -357,6 +393,40 @@
             <li class="grid_line"></li>
             <li class="grid_line"></li>
         </ul>
+
+        // JavaScript to enforce file size limit
+        <script>
+            // JavaScript to enforce file size limit
+            document.addEventListener("DOMContentLoaded", function() {
+                var maxSize = 5 * 1024 * 1024; // 5MB in bytes
+        
+                // Photo file input
+                var photoInput = document.getElementById("photo");
+                photoInput.addEventListener("change", function() {
+                    if (this.files[0].size > maxSize) {
+                        alert("Photo file size exceeds 5MB limit. Please choose a smaller file.");
+                        this.value = ""; // Clear the input field
+                    }
+                });
+        
+                // Song file input
+                var songInput = document.querySelector("input[name='song']");
+                songInput.addEventListener("change", function() {
+                    if (this.files[0].size > maxSize) {
+                        alert("Song file size exceeds 5MB limit. Please choose a smaller file.");
+                        this.value = ""; // Clear the input field
+                    }
+                });
+                // ID Proof file input
+                var idProofInput = document.getElementById("id_proof");
+                idProofInput.addEventListener("change", function() {
+                    if (this.files[0].size > maxSize) {
+                        alert("ID Proof file size exceeds 5MB limit. Please choose a smaller file.");
+                        this.value = ""; // Clear the input field
+                    }
+                });
+            });
+        </script>
         
 
         <!-- Core JS -->
